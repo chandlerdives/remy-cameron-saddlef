@@ -1,0 +1,478 @@
+/* -------------- CSS Reset -------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html { scroll-behavior: smooth; /* this enables smooth scrolling between internal links */ }
+  
+  img { max-width: 100%; /* this ensures images never break their container */ }
+  
+  body { color: #57606f; }
+  
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+      outline: none;
+  }
+  
+   /* this overrides the default padding and margin on gridlex elements */
+  [class*=grid] {   margin: 0;  }
+  [class*=col]  {   padding: 0; }
+  
+  
+  /* ------------ Utility Styles ---------- */
+  .txtleft     {  text-align: left;     }
+  .txtright    {  text-align: right;    }
+  .txtcenter   {  text-align: center;   }
+
+  .txtwhite    {  color: #EDE6E6;  }
+  .txtdark     {  color: #20212E;  }
+  
+  .padded      {  padding: 5%;    }
+  .padded-05   {  padding: 0.5%;  }
+  .padded-2    {  padding: 2%;    }
+  .padded-8    {  padding: 8%;    }
+  .padded-10   {  padding: 10%;   }
+  .padded-40   {  padding: 40%;   }
+
+  .relative  { position: relative; }
+
+  .border          {   border: 1px solid #20212E;         }
+  .border-white    {   border: 1px solid #F8F5F1;         }
+  .border-left     {   border-left: 1px solid #F8F5F1;    }
+
+  
+  .light-bg     {  background-color: #EDE6E6;  }
+  .dark-bg      {  background-color: #36384C; z-index: 1; }
+  .accent-bg    {  background-color: #CFB0AB;  }
+  .bold-bg      {  background-color: #613A43;  }
+  .comp-bg      {  background-color: #5F7052;  }
+  
+  /* ID's */
+  #nomargin   {  margin-bottom: 0rem;  }
+
+  .bump-right  { margin-left: -4rem; }
+  .bump-center { margin-left: -3rem; }
+  
+  
+  /* --------------- Typography ------------ */
+  h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  
+  
+  p {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 25px;
+  }
+
+
+  li {
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  
+  
+  /* ---------- Button Styles ----------- */
+  .button {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    display: inline-block;
+    /* reset */
+    color: #20212E;
+    background-color: #CFB0AB;
+    text-decoration: none;
+    /* styling */
+    text-transform: uppercase;
+    padding: 1rem 1.2rem;
+    position: relative;
+    border: 1px solid #36384C;
+    transition: 0.5s;
+  }
+
+  .button:hover {
+    /* reset */
+    color: #EDE6E6;
+    background-color: #5F7052;
+    text-decoration: none;
+    /* styling */
+    transition: 0.5s;
+  }
+  
+  a {
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+    text-decoration: underline;
+    color: #FFAD0A;
+    font-size: 1rem;
+    transition: 0.5s;
+  }
+
+  a:hover {
+    color: #D36135;
+    transition: 0.5s;
+  }
+  
+  
+  
+  /*--------------- Header and Footer ------------ */
+  header {
+    padding: 0.2% 2%;
+    background: 0 0;
+  }
+  
+  header nav a {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9rem;
+    padding: 0rem 1.2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    transition: 0.3s;
+  }
+  
+  header a:hover {
+    color: #D36135;
+  }
+  
+  footer nav a {
+    font-family: "Raleway", sans-serif;
+    margin: 2%;
+    font-size: 0.7rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    transition: 0.5s;
+  }
+  
+  footer nav a:hover {
+    color: #D36135;
+  }
+
+ 
+
+    /* ----------- Hamburger Nav -------------- */
+  /* this is the button which changes into an x */
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #57606f;
+    margin: 9px 0;
+    transition: 0.4s;
+  }
+  
+  /* rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  
+  /* buttons styles */
+  .hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    margin-top: -2.5rem;
+    position: fixed;
+    right: 1rem;
+    top: 2.5rem;
+    z-index: 9999;
+  }
+  
+  
+  /* this is the nav menu for mobile */
+  .mobile-menu {
+      display: none; 
+      background-color: #CEE7F1; 
+      padding: 2%;
+      position: fixed; 
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 999;
+  }
+  
+  .mobile-menu nav a {
+    font-family: "Raleway", sans-serif;
+      text-decoration: none; 
+      color: inherit; 
+      padding: 1rem 1.2rem;
+      display: block;
+      font-weight: normal;
+      font-size: 0.9rem;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    transition: 0.3s;
+  }
+
+  .mobile-menu a:hover {
+    color: #D36135;
+  }
+
+
+  
+  /* Default Responsive Styles (Dekstop and below) */
+  .mob-show {
+      display: none; 
+  }
+  
+  @media(max-width:1071px) {
+      .mob-hide { display: none; }
+      .mob-show { display: block; }
+  }
+  
+  
+  /* ---------- Font Awesome ------------ */
+
+  .fa-solid, .fa-brands, .fa-square-whatsapp, .fa-square-facebook, .fa-square-envelope {        
+    font-size: 2rem;
+    font-family: 'Font Awesome 5 Free';
+    color: #EDE6E6;
+  }
+
+  
+  /* -------------- Banners --------------- */
+
+  .banner-saddles {
+    background-image: url("images/saddle-line-up.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-horseshoes {
+    background-image: url("images/horseshoes.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-horses-galloping {
+    background-image: url("images/horse-galloping.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-horse-rider {
+    background-image: url("images/rider-and-horse.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-rider-on-horse {
+    background-image: url("images/rider-on-horse.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-saddles-lined-up {
+    background-image: url("images/saddles-lined-up.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+ 
+   
+  /* ------------------ Background Photos ---------------- */
+  /* Sizes */
+  img        {  max-width: 100%;  }
+  .img-md    {  max-width: 80%;   }
+  .img-sm    {  max-width: 40%;   } 
+
+  .bg-horse-field {
+    background-image: url("images/horse-in-field.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+  .bg-saddles-hanging {
+    background-image: url("images/saddles-on-wall.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 40rem;
+  }
+
+  .bg-saddles-hanging {
+    background-image: url("images/saddles-hanging.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    min-height: 40rem;
+  }
+
+
+  
+
+  /* ------------ Accordion -------------- */
+  .accordion {
+    /* max-width:30%; */
+    margin:auto;
+    position:relative;
+  }
+  .accordion dt{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 0.25rem 0;
+    display:block;
+    color: #36384C;;
+    position: relative;
+    text-decoration: none;
+  }
+  .accordion dd {
+    padding: 0.5rem;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  /* Icon */
+  .accordion dt::after {
+    content: "+";
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  
+  .accordion dt.open::after {
+    transform:rotate(45deg);
+  }
+  
+
+  /* ----------- Contact Form ---------- */
+  input, textarea {
+    border-style: solid;
+    border: 1px solid #20212E;
+    background-color: #EDE6E6;
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    vertical-align: top;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 1px solid #20212E;
+    /* featured color */
+    background-color: #EDE6E6;
+  }
+  
+  textarea {
+    min-height: 7em;
+  }
+  
+  input[type="submit"] {
+    display: block;
+  }
+  
+  .email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+  }
+  
+  .email-signup .button-solid {
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  form .button {
+    width: 100%;
+  }
+    @media(max-width:768px) {
+     .email-signup input {
+       width: 100%;
+       max-width: 100%;
+     }
+   }
