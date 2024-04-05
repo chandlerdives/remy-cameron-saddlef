@@ -9,8 +9,6 @@
   
   img { max-width: 100%; /* this ensures images never break their container */ }
   
-  body { color: #57606f; }
-  
   input:focus,
   select:focus,
   textarea:focus,
@@ -146,16 +144,30 @@
     font-family: "Raleway", sans-serif;
     display: inline-block;
     text-decoration: underline;
-    color: #FFAD0A;
-    font-size: 1rem;
+    color: #EDE6E6;
+    font-size: 3rem;
+    padding: 0.5% 2%;
     transition: 0.5s;
   }
 
   a:hover {
-    color: #D36135;
+    color: #613A43;
     transition: 0.5s;
   }
-  
+
+  .a2 {
+    font-family: "Raleway", sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9rem;
+    transition: 0.5s;
+  }
+
+  .a2:hover {
+    color: #5F7052;
+    transition: 0.5s;
+  }
   
   
   /*--------------- Header and Footer ------------ */
@@ -182,12 +194,12 @@
   }
   
   header a:hover {
-    color: #D36135;
+    color: #613A43;
   }
   
   footer nav a {
     font-family: "Raleway", sans-serif;
-    margin: 2%;
+    margin: 0.5%;
     font-size: 0.7rem;
     display: inline-block;
     text-decoration: none;
@@ -197,7 +209,7 @@
   }
   
   footer nav a:hover {
-    color: #D36135;
+    color: #613A43;
   }
 
  
@@ -300,11 +312,8 @@
   
   /* ---------- Font Awesome ------------ */
 
-  .fa-solid, .fa-brands, .fa-square-whatsapp, .fa-square-facebook, .fa-square-envelope {        
-    font-size: 2rem;
-    font-family: 'Font Awesome 5 Free';
-    color: #EDE6E6;
-  }
+  .fa-brands, {  font-family: 'Font Awesome 6 Free';  }
+  .fa-solid, {   font-family: 'Font Awesome 6 Free';  }
 
   
   /* -------------- Banners --------------- */
@@ -358,6 +367,7 @@
   img        {  max-width: 100%;  }
   .img-md    {  max-width: 80%;   }
   .img-sm    {  max-width: 40%;   } 
+  .img-logo  {  max-width: 90%;   } 
 
   .bg-horse-field {
     background-image: url("images/horse-in-field.jpg");
