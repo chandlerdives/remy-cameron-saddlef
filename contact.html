@@ -28,25 +28,28 @@
     </head>
     <body>
 
-<!-- CONTENT STARTS HERE --> 
+<!-- PAGE STARTS HERE --> 
     <section class="grid comp-bg">
-        <div class="col-12 padded-05 txtcenter txtwhite">
+        <div class="col-12 padded-05 txtcenter txtwhite mob-hide">
             <p id="nomargin" >- Trained with The Society of Master Saddlers -  Covering Hampshire, Wiltshire & Dorset - Get in touch today to book your perfect Saddle Fit -</p>
+        </div>
+        <div class="col-12 padded-05 txtcenter txtwhite mob-show">
+            <p id="nomargin" >- Covering Hampshire, Wiltshire & Dorset -</p>
         </div>
     </section>
     <!-- navigation and banner section -->
     <section class="light-bg txtdark txtcenter">
         <header class="grid">
-            <div class="col-4-middle txtright">
+            <div class="col-4-middle txtright mob-hide">
                 <nav>
                     <a href="services.html"> The Perfect Fit </a>
-                    <a href="index.html#aboutremy"> About Remy </a>
+                    <a href="#aboutremy"> About Remy </a>
                 </nav>
             </div>
-            <div class="col-4-middle">
+            <div class="col-4-middle mob-hide">
                 <a href="/"><img src="images/logo.png" alt=""></a>
             </div>
-            <div class="col-4-middle txtleft">
+            <div class="col-4-middle txtleft mob-hide">
                 <nav>
                     <a href="https://www.facebook.com/profile.php?id=100078955659576"> Stay Connected </a>
                     <a href="contact.html"> Schedule Your Fit </a>
@@ -66,17 +69,19 @@
         <!-- Mobile menu -->
         <div class="mobile-menu"> 
             <nav> 
-                <a href="index.html"><i class="fa-regular fa-circle-left"></i></a>
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
                 <a href="services.html"> The Perfect Fit </a>
-                <a href="index.html#aboutremy"> About Remy </a>
+                <a href="#aboutremy"> About Remy </a>
                 <a href="https://www.facebook.com/profile.php?id=100078955659576"> Stay Connected </a>
                 <a href="contact.html"> Schedule Your Fit </a>
             </nav>
         </div>
     </section>
 
+
+<!-- CONTENT STARTS HERE --> 
     <!-- Section 1 - Get in Touch -->
-    <section class="grid-spaceAround light-bg txtdark">
+    <section class="grid-spaceAround light-bg txtdark mob-hide">
         <div class="col-6-middle padded-8">
             <h2>Let's Get you booked in!</h2>
             <p>Need a hand finding the perfect saddle? Got a burning question about your horse's comfort?</p>
@@ -91,6 +96,23 @@
             <img src="images/square-grid-4.png" alt="">
         </div>
     </section>
+    <!-- mob show -->
+    <section class="grid light-bg txtdark mob-show">
+        <div class="col-12-middle txtcenter padded-8">
+            <img src="images/square-grid-4.png" alt="">
+        </div>
+        <div class="col-12-middle txtcenter padded-8">
+            <h2>Let's Get you booked in!</h2>
+            <p>Need a hand finding the perfect saddle? Got a burning question about your horse's comfort? Remy Cameron Saddle Fitters is here to help! Shoot me a message using the details below and I will get back to you ASAP.</p>
+            <li class="txtleft"><b>Email:</b> remy.saddlefitter@hotmail.com</li>
+            <li class="txtleft"><b>Phone:</b> (+44) 7783 055004</li>
+            <li class="txtleft"><b>Social:</b><a class="a2" href="https://www.facebook.com/profile.php?id=100078955659576"> visit our Facebook Page</a></li>
+            <br>
+            <a class="button" href="">Fill out our contact form</a>
+        </div>
+    </section>
+
+
 
     <!-- Back to home -->
     <section class="grid light-bg txtdark padded-2">
@@ -101,7 +123,7 @@
     
     
     <!-- Section  - Footer -->
-    <footer class="grid comp-bg txtwhite">
+    <footer class="grid comp-bg txtwhite mob-hide">
         <div class="col-3-middle txtleft padded-2">
             <img class="img-logo" src="images/logo-white.png" alt="">
         </div>
@@ -124,6 +146,31 @@
             <a href=""><i class="fa-brands fa-square-facebook"></i></a>
         </div>
     </footer>
+    <!-- mob show -->
+    <footer class="grid comp-bg txtwhite mob-show">
+        <div class="col-12-middle txtcenter">
+            <img class="img-logo" src="images/logo-white.png" alt="">
+        </div>
+        <div class="col-12-middle txtcenter padded-2">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <div class="col-12-middle txtcenter">
+            <nav class="inline">
+                <a href="index.html"> Home </a>|
+                <a href="services.html"> Services </a>|
+                <a href="contact.html"> Contact </a>|
+                <a href="#"> T&C's </a>|
+                <a href="#"> Privacy Policy </a>
+            </nav>
+            <nav class="inline">
+                <a href="#"> © 2024, Remy Cameron Saddle Fitter </a>|
+                <a href="#"> Site Design by The Verdi Collective </a>
+            </nav>
+        </div>
+    </footer>
+
     
        
     <!--------------------- Add jQuery -------------------->

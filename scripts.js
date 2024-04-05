@@ -11,3 +11,14 @@ var allPanels = $('.accordion > dd').hide();
     
     return false;
 	});
+
+
+  // ------ Hamburger Button
+$('.hamburger-button').click(function(){
+  $('.mobile-menu').slideToggle(100);
+  $(this).toggleClass('active');
+});
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}

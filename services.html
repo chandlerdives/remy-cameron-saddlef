@@ -28,25 +28,28 @@
     </head>
     <body>
 
-<!-- CONTENT STARTS HERE --> 
+<!-- PAGE STARTS HERE --> 
     <section class="grid comp-bg">
-        <div class="col-12 padded-05 txtcenter txtwhite">
+        <div class="col-12 padded-05 txtcenter txtwhite mob-hide">
             <p id="nomargin" >- Trained with The Society of Master Saddlers -  Covering Hampshire, Wiltshire & Dorset - Get in touch today to book your perfect Saddle Fit -</p>
+        </div>
+        <div class="col-12 padded-05 txtcenter txtwhite mob-show">
+            <p id="nomargin" >- Covering Hampshire, Wiltshire & Dorset -</p>
         </div>
     </section>
     <!-- navigation and banner section -->
     <section class="light-bg txtdark txtcenter">
         <header class="grid">
-            <div class="col-4-middle txtright">
+            <div class="col-4-middle txtright mob-hide">
                 <nav>
                     <a href="services.html"> The Perfect Fit </a>
-                    <a href="index.html#aboutremy"> About Remy </a>
+                    <a href="#aboutremy"> About Remy </a>
                 </nav>
             </div>
-            <div class="col-4-middle">
+            <div class="col-4-middle mob-hide">
                 <a href="/"><img src="images/logo.png" alt=""></a>
             </div>
-            <div class="col-4-middle txtleft">
+            <div class="col-4-middle txtleft mob-hide">
                 <nav>
                     <a href="https://www.facebook.com/profile.php?id=100078955659576"> Stay Connected </a>
                     <a href="contact.html"> Schedule Your Fit </a>
@@ -66,17 +69,19 @@
         <!-- Mobile menu -->
         <div class="mobile-menu"> 
             <nav> 
-                <a href="index.html"><i class="fa-regular fa-circle-left"></i></a>
+                <a href="index.html"><i class="fa-solid fa-house"></i></a>
                 <a href="services.html"> The Perfect Fit </a>
-                <a href="index.html#aboutremy"> About Remy </a>
+                <a href="#aboutremy"> About Remy </a>
                 <a href="https://www.facebook.com/profile.php?id=100078955659576"> Stay Connected </a>
                 <a href="contact.html"> Schedule Your Fit </a>
             </nav>
         </div>
     </section>
 
+
+<!-- CONTENT STARTS HERE --> 
     <!-- Section 1 - Header -->
-    <section class="grid light-bg padded">
+    <section class="grid light-bg padded mob-hide">
         <div class="col-1"></div>
         <div class="col-5-middle dark-bg txtleft txtwhite padded" >
             <h1>get the perfect fit to unlock your horses potential</h1>
@@ -87,10 +92,21 @@
             <img class="" src="images/saddles-on-wall-helmett.png" alt="">
         </div>
     </section>
+    <!-- mob show -->
+    <section class="grid light-bg txtcenter padded mob-show">
+        <div class="col-12-middle dark-bg padded">
+            <img class="img-logo" src="images/saddles-on-wall-helmett.png" alt="">
+        </div>
+        <div class="col-12-middle dark-bg txtwhite padded" >
+            <h1>get the perfect fit to unlock your horses potential</h1>
+            <br>
+            <a class="button" href="services.html">Let's get you saddled up</a>
+        </div>
+    </section>
 
 
     <!-- Section 2 - The problem -->
-    <section class="grid bold-bg txtwhite padded-8">
+    <section class="grid bold-bg txtwhite padded-8 mob-hide">
         <div class="col-1"></div>
         <div class="col-5-middle txtright">
             <h2>A Bad Saddle = Hidden Costs.</h2>
@@ -100,14 +116,23 @@
         </div>
         <div class="col-1"></div>
     </section>
+    <!-- mob show -->
+    <section class="grid bold-bg txtwhite txtcenter padded-8 mob-show">
+        <div class="col-12-middle">
+            <h2>A Bad Saddle = Hidden Costs.</h2>
+        </div>
+        <div class="col-12-middle">
+            <p>Think a bad saddle just means discomfort? Think again. It can hinder your horse's performance, lead to behavioral issues, and even cause long-term health problems.</p>
+        </div>
+    </section>
 
 
-    <!-- Sectiong 3 - The solution -->
-    <section class="grid txtdark accent-bg">
+    <!-- Section 3 - The solution -->
+    <section class="grid txtdark accent-bg mob-hide">
         <div class="col-6-middle light-bg padded-8">
             <h2>How to fix the Problem? Invest in the best Fit from the start!</h2>
             <br>
-            <p>A properly fitted saddle is an investment in your horse's health, happiness, and performance.. We offer a range of personalised services to ensure you find the perfect saddle solution.</p>  
+            <p>A properly fitted saddle is an investment in your horse's health, happiness, and performance. We offer a range of personalised services to ensure you find the perfect saddle solution.</p>  
             <br>
             <a class="button" href="contact.html">Book your consultation today</a>
             <br>
@@ -116,6 +141,36 @@
             <p><i>Payment(s) to be made using cheque, cash or bank transfer. Prices inluded VAT.</i></p>         
         </div>
         <div class="col-6-middle bg-horse-trotting accent-bg padded-8">
+            <h3>Consultations</h3>
+                <li>First Visit or Consultation: £65</li>
+                <li>Second Visit or Consultation: £40</li>
+            <br>
+            <br>
+            <h3>Fitting Charges</h3>
+                <li>Fitting or trying saddles: £36 per horse</li>
+                <li>Checking an existing saddle: £30 per horse</li>
+            <br>
+            <br>
+            <h3>Alterations</h3>
+                <li>Flocking: £42 + Reflocking: £20</li>
+                <li>Swap Gullet bar: £24</li>
+                <li>New Gullet bar: £30</li>     
+        </div>
+    </section>
+    <!-- mob-show -->
+    <section class="grid txtdark accent-bg txtcenter mob-show">
+        <div class="col-12-middle light-bg padded-8">
+            <h2>How to fix the Problem? Invest in the best Fit from the start!</h2>
+            <br>
+            <p>A properly fitted saddle is an investment in your horse's health, happiness, and performance. We offer a range of personalised services to ensure you find the perfect saddle solution.</p>  
+            <br>
+            <a class="button" href="contact.html">Book your consultation today</a>
+            <br>
+            <br>
+            <br>
+            <p><i>Payment(s) to be made using cheque, cash or bank transfer. Prices inluded VAT.</i></p>         
+        </div>
+        <div class="col-12-middle bg-horse-trotting accent-bg padded-8">
             <h3>Consultations</h3>
                 <li>First Visit or Consultation: £65</li>
                 <li>Second Visit or Consultation: £40</li>
@@ -165,13 +220,13 @@
 
     <!-- Section 5 - the procedure -->
     <section class="grid-spaceAround accent-bg txtdark padded-8">
-        <div class="col-8 txtcenter">
+        <div class="col-8_sm-12-middle txtcenter">
             <h2>What to Expect During Your Saddle Fitting Consultation</h2>
             <p>Please note: Saddle fitting consultations can take a few hours for adjustments, or choose a quicker one-hour check-up. Please have your clean, dry horse ready with bridle, boots, girth, stirrups, and pad for a smooth session!</p>
         </div>
         <div class="grid txtleft">
-            <div class="col-2"></div>
-            <div class="col-4 padded-2">
+            <div class="col-2_md-12"></div>
+            <div class="col-4_md-6_sm-12 padded-2">
                 <div class="border accent-bg padded-8">
                     <h3>Checking an Existing Saddle:</h3>
                     <li><b>Initial Assessment:</b> I'll place the saddle on your horse's back with your usual pad and observe you riding.</li>
@@ -180,7 +235,7 @@
                     <li><b>Advanced Work:</b> For significant work, the saddle may go to my workshop or the manufacturer.</li>
                 </div>
             </div>
-            <div class="col-4 padded-2">
+            <div class="col-4_md-6_sm-12 padded-2">
                 <div class="border accent-bg padded-8">
                     <h3>Fitting a brand New Saddle:</h3>
                     <li><b>Trying Different Saddles:</b> We'll test various saddles on your horse's back to assess the fit.</li>
@@ -189,7 +244,7 @@
                     <li><b>Refined Selection:</b> After narrowing down the options, we'll do a more in-depth evaluation of the top contenders.</li>
                 </div>
             </div>
-            <div class="col-2"></div>
+            <div class="col-2_md-12"></div>
         </div>
         <div class="col-8 txtcenter padded-2">
             <a class="button" href="contact.html">Schedule a Fitting & See the Difference</a>
@@ -199,7 +254,7 @@
 
     <!-- Section 6 - CTA -->
     <section class="grid-spaceAround banner-saddles padded">
-        <div class="col-10 bold-bg txtwhite txtcenter border padded">
+        <div class="col-10_sm-12 bold-bg txtwhite txtcenter border padded">
             <h4>Are you ready to take the plunge?</h4>
             <h2>book a consultation</h2>
             <form class="grid-center" action="https://formspree.io/f/xoqznovw" method="POST">
@@ -222,7 +277,7 @@
 
     <!-- Section 7 - FAQ -->
     <section class="grid-spaceAround txtdark light-bg">
-        <div class="col-10-middle padded-8">
+        <div class="col-10_sm-12-middle padded-8">
             <h2 class="txtcenter">Common Saddle Fit Questions </h2>
             <br>
             <dl class="accordion">
@@ -252,7 +307,7 @@
 
     <!-- Section 8 - Final CTA -->
     <section class="grid-spaceAround dark-bg txtwhite txtcenter padded">
-        <div class="col-6">
+        <div class="col-6_md-12">
             <div class="grid">
                 <div class="col-6 padded-2">
                     <img src="images/square-grid-1.png" alt="">
@@ -268,7 +323,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 padded-8">
+        <div class="col-6_md-10_sm-12 padded-8">
             <h2>The Secret to a Happy Horse & Rider?</h2>
             <h2>A Saddle That Fits Just Right!</h2>
             <br>
@@ -285,7 +340,7 @@
 
     
     <!-- Section 9 - Footer -->
-    <footer class="grid comp-bg txtwhite">
+    <footer class="grid comp-bg txtwhite mob-hide">
         <div class="col-3-middle txtleft padded-2">
             <img class="img-logo" src="images/logo-white.png" alt="">
         </div>
@@ -308,6 +363,31 @@
             <a href=""><i class="fa-brands fa-square-facebook"></i></a>
         </div>
     </footer>
+    <!-- mob show -->
+    <footer class="grid comp-bg txtwhite mob-show">
+        <div class="col-12-middle txtcenter">
+            <img class="img-logo" src="images/logo-white.png" alt="">
+        </div>
+        <div class="col-12-middle txtcenter padded-2">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+        <div class="col-12-middle txtcenter">
+            <nav class="inline">
+                <a href="index.html"> Home </a>|
+                <a href="services.html"> Services </a>|
+                <a href="contact.html"> Contact </a>|
+                <a href="#"> T&C's </a>|
+                <a href="#"> Privacy Policy </a>
+            </nav>
+            <nav class="inline">
+                <a href="#"> © 2024, Remy Cameron Saddle Fitter </a>|
+                <a href="#"> Site Design by The Verdi Collective </a>
+            </nav>
+        </div>
+    </footer>
+
     
        
     <!--------------------- Add jQuery -------------------->
